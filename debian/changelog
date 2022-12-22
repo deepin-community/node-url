@@ -1,0 +1,47 @@
+node-url (0.11.0-5) unstable; urgency=medium
+
+  * Team upload
+
+  [ lintian-brush ]
+  * Fix field name case in debian/tests/control (Test-command => Test-Command).
+
+  [ Yadd ]
+  * Declare compliance with policy 4.6.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Fix GitHub tags regex
+  * Use dh-sequence-nodejs for test and install
+
+ -- Yadd <yadd@debian.org>  Fri, 24 Sep 2021 16:10:49 +0200
+
+node-url (0.11.0-4) unstable; urgency=medium
+
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on node-assert.
+    + node-url: Drop versioned constraint on node-punycode and node-querystring
+      in Depends.
+  * Bump debhelper from old 12 to 13.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Wed, 15 Sep 2021 10:49:31 +0100
+
+node-url (0.11.0-3) unstable; urgency=medium
+
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Sun, 29 Aug 2021 00:51:25 +0100
+
+node-url (0.11.0-2) unstable; urgency=medium
+
+  * Move to salsa
+  * Bump policy and compat
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 25 Jun 2018 22:08:34 +0200
+
+node-url (0.11.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #858740)
+
+ -- Bastien Roucariès <rouca@debian.org>  Sat, 25 Mar 2017 22:17:08 +0100
